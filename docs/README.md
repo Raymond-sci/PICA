@@ -4,7 +4,7 @@
 
 Pytorch implementation of [Deep Semantic Clustering by Partition Confidence Maximisation](https://raymond-sci.github.io/assets/project/huang2020pica/paper.pdf). 
 
-<img src="assets/pipeline.pdf" width="800">
+<img src="assets/pipeline.jpg" width="800">
 
 ## Highlight
 
@@ -17,7 +17,7 @@ Pytorch implementation of [Deep Semantic Clustering by Partition Confidence Maxi
 ## Main results
 The proposed PICA method was evaluated on a wide range of objects recognition benchmarks including CIFAR10/100, STL-10 and multiple variants of ImageNet. Results are shown as below:
 
-<img src="assets/evaluation.pdf" width="800" />
+<img src="assets/evaluation.jpg" width="800" />
 
 ## Implementation
 
