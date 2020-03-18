@@ -10,7 +10,7 @@ net_heads:
 
 # args for dataset and dataloader
 dataset: stl10
-data_root: /import/sgg-homes/jh327/Dataset/stl-10
+data_root: data/stl-10
 tfm_means: (0.485, 0.456, 0.406)
 tfm_stds: (0.229, 0.224, 0.225)
 tfm_size: (96, 96)
