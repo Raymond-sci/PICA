@@ -1,0 +1,17 @@
+####################$
+# cfgs for cifar100 #
+####################$
+
+# args for network
+net_avgpool_size: 3
+net_heads:
+  - 70
+  - 20
+
+# args for dataset and dataloader
+dataset: cifar100
+data_root: /import/sgg-homes/jh327/Dataset/cifar-100
+tfm_means: (0.5071, 0.4866, 0.4409)
+tfm_stds: (0.2009, 0.1984, 0.2023)
+tfm_size: (32, 32)
+tfm_resize: 40

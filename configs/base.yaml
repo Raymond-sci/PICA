@@ -1,0 +1,34 @@
+#############
+# base cfgs #
+#############
+
+# args for training
+log_file: True
+log_tfb: True
+display_freq: 50
+
+# args for network
+network: resnet34
+net_sobel: True
+
+# args for transforms
+data_nrepeat: 3
+tfm_scale: (0.2, 1.)
+tfm_ratio: (3./4., 4./3.)
+tfm_colorjitter: (0.4, 0.4, 0.4, 0.4)
+tfm_random_grayscale: 0.2
+tfm_random_hflip: 0.5
+
+# args for lr policy
+base_lr: 1e-4
+lr_policy: fixed
+# args for optimizer
+optimizer: adam
+optim_weight_decay: 0.
+
+# args for loader
+num_workers: 8
+batch_size: 256
+
+# args for session
+session_root: "sessions"
