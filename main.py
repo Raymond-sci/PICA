@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Date    : 2019-05-29 16:35:04
-# @Author  : Raymond Wong (jiabo.huang@qmul.ac.uk)
-# @Link    : github.com/Raymond-sci
+# @Author  : Raymond Huang (jiabo.huang@qmul.ac.uk)
+# @Link    : github.com/Raymond-sci/PICA
 
 import os
 import sys
