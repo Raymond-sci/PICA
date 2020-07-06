@@ -32,7 +32,7 @@ A new environment with all the dependencies can be created by `conda env create 
 2. Download datasets: [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) and [STL-10](http://ai.stanford.edu/~acoates/stl10/)
 3. Examples of training PICA on different datasets are provided in `/config`. Use the command `python main.py --cfgs configs/base.yaml configs/cifar100.yaml` to run the experiments on CIFAR100. Most of the dataset-irrelevant arguments, *e.g.* optimiser and backbone, are specified in `configs/base.yaml`. Hence, replace `configs/cifar100.yaml` by `configs/stl10.yaml` to run on STL-10. 
 4. Use the flag `--data-root` in command line or modify the config files to set the data path
-5. The program is run on CPU by default, use the flag `--gpus 0,1,...` to specify the gpu devices that you want to use
+5. The program is run on CPU by default, use the flag `--gpus GPU` to specify the gpu device you would like to use
 
 Every time the `main.py` is run, a new session will be started with the name of current timestamp and all the generated files will be stored in folder `sessions/timestamp/` including checkpoints, logs, etc. Use the flag `--session` to specify a session name and `--debug` to produce no file.
 

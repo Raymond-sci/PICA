@@ -98,16 +98,6 @@ def main():
         best_acc = ckpt['acc']
         start_epoch = ckpt['epoch']
 
-    # data parallel
-    if cfg.device == 'cuda' and len(cfg.gpus.split(',')) > 1:
-        logger.info('Data parallel will be used for acceleration purpose')
-        device_ids = range(len(cfg.gpus.split(',')))
-        if not (hasattr(net, 'data_parallel') and net.data_parallel(device_ids)):
-            net = nn.DataParallel(net, device_ids=device_ids)
-        cudnn.benchmark = True
-    else:
-        logger.info('Data parallel will not be used for acceleration')
-
     # move modules to target device
     net, criterion = net.to(cfg.device), criterion.to(cfg.device)
 
